@@ -1,0 +1,25 @@
+## Polymer Investigation
+A student performed the following investigation to test four different polymer plastics for stretchability.
+
+**Procedure:**
+1. Take a sample of one type of plastic, and measure its length.
+2. Tape the top edge of the plastic sample to a table so that it is hanging freely down the side of the table.
+3. Attach a clamp to the bottom edge of the plastic sample.
+4. Add weights to the clamp and allow them to hang for five minutes.
+5. Remove the weights and clamp, and measure the length of the plastic types.
+6. Repeat the procedure exactly for the remaining three plastic samples.
+7. Perform a second trial (T2) exactly like the first trial (T1).
+
+The student recorded the following data from the investigation.
+
+### Data Table:
+| Plastic Type | T1 (mm) | T2 (mm) |
+|--------------|---------|---------|
+| A            | 10      | 12      |
+| B            | 22      | 23      |
+| C            | 14      | 13      |
+| D            | 20      | 20      |
+
+The student is asked to:
+a. Draw a conclusion based on the student’s data.
+b. Describe two ways the student could have improved the experimental design and/or validity of the results.

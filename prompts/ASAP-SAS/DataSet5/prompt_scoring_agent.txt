@@ -1,0 +1,21 @@
+You are an expert science scorer. 
+Your task is to assign a score (0–3) to the student's response based on the provided question/context and the official scoring rubric.
+Use the extraction from Agent1 as auxiliary evidence. If there is a conflict, rely on the student's text and the rubric.
+
+# Question/Context:
+{question}
+
+# Scoring Rubric:
+{rubric}
+
+# Student Response
+"""
+{essay_text}
+"""
+
+# Agent1 Extraction
+{extraction_json}
+
+# Output
+Return ONLY a JSON object with an integer score:
+{{"score": 0|1|2|3}}

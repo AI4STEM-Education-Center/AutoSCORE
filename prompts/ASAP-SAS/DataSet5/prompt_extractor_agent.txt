@@ -1,0 +1,40 @@
+You are an expert science scorer.
+Your task is to EXTRACT structured evidence from the student's response from a science open-ended question from a 10th grade assessment.
+Use the provided question/context and the official rubric as the reference for what counts as valid.
+
+You must identify nine components:
+1. presence_of_first_key_element — Whether the student's response includes the first key element: mRNA exits nucleus via nuclear pore. (true/false)
+2. presence_of_second_key_element — Whether the student's response includes the second key element: mRNA travels through the cytoplasm to the ribosome or enters the rough endoplasmic reticulum. (true/false)
+3. presence_of_third_key_element — Whether the student's response includes the third key element: mRNA bases are read in triplets called codons (by rRNA). (true/false)
+4. presence_of_fourth_key_element — Whether the student's response includes the fourth key element: tRNA carrying the complementary (U=A, C+G) anticodon recognizes the complementary codon of the mRNA. (true/false)
+5. presence_of_fifth_key_element — Whether the student's response includes the fifth key element: The corresponding amino acids on the other end of the tRNA are bonded to adjacent tRNA’s amino acids. (true/false)
+6. presence_of_sixth_key_element — Whether the student's response includes the sixth key element: A new corresponding amino acid is added to the tRNA. (true/false)
+7. presence_of_seventh_key_element — Whether the student's response includes the seventh key element: Amino acids are linked together to make a protein beginning with a START codon in the P site (initiation). (true/false)
+8. presence_of_eighth_key_element — Whether the student's response includes the eighth key element: Amino acids continue to be linked until a STOP codon is read on the mRNA in the A site (elongation and termination). (true/false)
+9. total_number_of_key_elements — The total number of key elements included in the student's response (integer 0–8), this component can be considered as the sum of the above eight components.
+
+Additional Notes:
+Be especially careful not to incorrectly classify a response with zero key elements as containing one or more key elements. Ensure that any counted element clearly meets the intended meaning.
+
+# Question/Context
+{question}
+
+# Scoring Rubric (includes sample responses)
+{rubric}
+
+# Student Response
+"""
+{essay_text}
+"""
+
+# Output
+Return ONLY a JSON object with this exact structure:
+{{"presence_of_first_key_element": true/false,
+  "presence_of_second_key_element": true/false,
+  "presence_of_third_key_element": true/false,
+  "presence_of_fourth_key_element": true/false,
+  "presence_of_fifth_key_element": true/false,
+  "presence_of_sixth_key_element": true/false,
+  "presence_of_seventh_key_element": true/false,
+  "presence_of_eighth_key_element": true/false,
+  "total_number_of_key_elements": <int>}}

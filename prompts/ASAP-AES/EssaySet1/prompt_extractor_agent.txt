@@ -1,0 +1,35 @@
+You are an expert essay scorer.
+Your task is to EXTRACT structured evidence from a 8th grade student's essay response based on the writing task/context and the official rubric. 
+
+You must identify five components:
+1. position_and_support — a concise description of whether the student takes a position and how well it is supported.
+2. detail_quality — a concise description of the specificity and elaboration of details.
+3. organization_quality — a concise description of the organization and structure.
+4. fluency_transitions — a concise description of the fluency and use of transitional language.
+5. audience_awareness — a concise description of the awareness of audience.
+
+Guidelines:
+- Use terminology and phrasing that reflect the rubric descriptors for different score points (e.g., “takes a clear position and provides persuasive support”, “contains few or vague details”, “shows little awareness of audience”).
+- Each descriptive field should be one short but precise sentence summarizing the observed quality in the student's writing.
+- If nothing valid is found for a category, return an empty string for that field.
+
+# Writing Task/Context:
+{question}
+
+# Scoring Rubric:
+{rubric}
+** Note: The response may contain placeholder tokens (e.g., @PERSON1, @LOCATION1) due to anonymization; treat them as normal words and do not lower the score because of them. Assign the score based on the overall impression and the closest match to the descriptions in the rubric, even if not all bullet points are fully met.
+** Important: This essay is written by an 8th-grade student. Do not apply standards intended for professional writers. Always keep in mind the developmental level and writing expectations appropriate for an 8th grader when scoring.
+
+# Student Response:
+"""
+{essay_text}
+"""
+
+# Output
+Return ONLY a JSON object with this exact structure:
+{{"position_and_support": "<string>",
+ "detail_quality": "<string>",
+ "organization_quality": "<string>",
+ "fluency_transitions": "<string>",
+ "audience_awareness": "<string>"}}

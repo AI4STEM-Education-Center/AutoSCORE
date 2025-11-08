@@ -1,0 +1,10 @@
+## Rubric for Organization of Article
+
+**Score 2 (Proficient)**
+The response fulfills all the requirements of the task. The organization strategy is accurate and text-based. The supporting details are relevant, specific, and clearly connected to the identified organization. The response demonstrates clear understanding of the passage structure.
+
+**Score 1 (Partially Proficient)**
+The response fulfills some of the requirements of the task. The organization strategy may be correct but expressed vaguely, incompletely, or without strong support. Some supporting details may be too general, simplistic, or only loosely connected to the organization.
+
+**Score 0 (Not Proficient)**
+The response does not fulfill the requirements of the task because it contains inaccurate, incomplete, missing, or unsupported information. The organization strategy may be incorrect, or no relevant text-based details are provided.

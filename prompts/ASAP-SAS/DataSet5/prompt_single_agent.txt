@@ -1,0 +1,17 @@
+You are an expert science scorer. 
+Your task is to assign a score (0–3) to the student's response based on the provided question/context and the official scoring rubric.
+
+# Question/Context:
+{question}
+
+# Scoring Rubric:
+{rubric}
+
+# Student Response
+"""
+{essay_text}
+"""
+
+# Output
+Return ONLY a JSON object with an integer score:
+{{"score": 0|1|2|3}}
